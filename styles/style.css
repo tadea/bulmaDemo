@@ -5,9 +5,9 @@
 .bottom,
 .left {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-size: small;
 }
 
 .center-column {

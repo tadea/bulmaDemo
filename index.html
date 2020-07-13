@@ -12,49 +12,120 @@
       defer
       src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
     ></script>
-    <link rel="stylesheet" href="styles/debug.css" />
-    <link rel="stylesheet" href="styles/helpers.css" />
+
+    <link rel="stylesheet" href="styles/style.css" />
     <style>
       .hero {
-        background: black url(images/movado.png) center / cover;
+        background: black
+          url(https://cdn.shopify.com/s/files/1/0627/5517/files/apexv2_64a76f8f-a7ef-4d7d-b9c4-2d611f716b58.jpg?v=1585934924)
+          center / cover;
       }
 
       @media (max-width: 1024px) {
         .hero {
-          background: black url(images/movado.png) center / cover;
+          background: black url(images/tets.jpg) center / cover;
         }
       }
       @media (max-width: 768px) {
         .hero {
-          background: black url(images/movado.png) center / cover;
+          background: black url(images/tets.jpg) center / cover;
         }
       }
     </style>
   </head>
   <body>
-    <!-- .hero -->
     <section class="hero is-fullheight">
-      <!-- .hero-head -->
-      <div class="hero-head">
-        <div class="columns is-mobile is-marginless">
+      <nav class="hero-head">
+        <div
+          class="columns is-mobile is-marginless heading has-text-weight-bold"
+        >
           <div class="column left">
-            <p class="navbar-item">MOVADO</p>
+            <p class="navbar-item" style="font-size: 2em;">MOVADO</p>
           </div>
-          <div class="column center desktop">
-            <p class="navbar-item">CLASSIC</p>
-            <p class="navbar-item">BOLD</p>
-            <p class="navbar-item">ULTRA SLIM</p>
-            <p class="navbar-item">CONNECT</p>
+          <div class="column center desktop" style="font-size: 1.4em;">
+            <p class="navbar-item has-text-white">CLASSIC</p>
+            <p class="navbar-item has-text-white">BOLD</p>
+            <p class="navbar-item has-text-white">ULTRA SLIM</p>
+            <p class="navbar-item has-text-white">CONNECT</p>
           </div>
-          <div class="column right">
-            <p class="navbar-item desktop">SHOP</p>
-            <p class="navbar-item desktop">SIGN IN</p>
-            <p class="navbar-item">HAMBURGER</p>
+          <div class="column right" style="font-size: 1.4em;">
+            <p class="navbar-item desktop has-text-white">SHOP</p>
+            <p class="navbar-item desktop has-text-white">SIGN IN</p>
+            <figure class="navbar-item image has-text-black center">
+              <i
+                class="fas fa-bars"
+                style="width: 1rem; height: 1rem; color: white;"
+              ></i>
+            </figure>
           </div>
         </div>
-      </div>
-      <!-- /.hero-head -->
+      </nav>
+      <main class="hero-foot center" style="padding: 3rem;">
+        <div id="grid" style="width: 768px;">
+          <div id="a" class="center-column">
+            <p class="has-text-centered has-text-white" style="font-size: 2em;">
+              Movado means ‘always in motion’ in the Esperanto language<br />
+              Founded in Switzerland in 1881 by a 19 year-old entrepreneur<br />
+            </p>
+            <br />
+          </div>
+          <br />
+          <div id="b" class="center">
+            <p class="title has-text-white">
+              <i
+                class="fas fa-gem fa-lg"
+                style="width: 0.9em; height: 0.9em;"
+              ></i>
+              K-1
+            </p>
+            <p class="subtitle has-text-white is-7">Crystal</p>
+          </div>
+          <br />
+          <div id="c" class="center-column">
+            <p class="title has-text-white has-text-weight-light">
+              <i
+                class="fas fa-tint fa-lg"
+                style="width: 0.9em; height: 0.9em;"
+              ></i>
+              Water Resistant<br />
+            </p>
+            <p class="subtitle has-text-white is-7">3 ATM</p>
+          </div>
+          <br />
+          <div id="d" class="center-column">
+            <p class="title has-text-white has-text-weight-light">
+              <i
+                class="fas fa-circle-notch fa-lg"
+                style="width: 0.9em; height: 0.9em;"
+              ></i>
+              Movement
+            </p>
+            <p class="subtitle has-text-white is-7">
+              SWISS QUARTZ CHRONOGRAPH
+            </p>
+            <br />
+          </div>
+          <div id="e" class="center-column">
+            <a
+              class="button is-dark is-inverted is-rounded is-outlined has-text-weight-bold"
+              style="width: 100%; border: 0.15em solid white;"
+            >
+              Shop Collection
+            </a>
+          </div>
+        </div>
+      </main>
     </section>
-    <!-- /.hero -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          Built with <strong>Bulma</strong> by
+          <a
+            href="https://github.com/tadea?tab=overview&from=2019-12-01&to=2019-12-13"
+            >Tadea Simunovic</a
+          >.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
