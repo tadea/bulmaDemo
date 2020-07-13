@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hello Bulma!</title>
+    <title>Bulma Demo</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css"
@@ -12,25 +12,49 @@
       defer
       src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
     ></script>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/debug.css" />
+    <link rel="stylesheet" href="styles/helpers.css" />
     <style>
+      .hero {
+        background: black url(images/movado.png) center / cover;
+      }
 
+      @media (max-width: 1024px) {
         .hero {
-            background: url(images/movado.png) center / cover;
-            width: 100%;
-            height: auto;
+          background: black url(images/movado.png) center / cover;
         }
-
-        @media (max-width: 1024px) { .hero { background: url(images/movado.png) center / cover; } }
-        @media (max-width:  768px) { .hero { background: url(images/movado.png) center / cover; } }
-
-        
+      }
+      @media (max-width: 768px) {
+        .hero {
+          background: black url(images/movado.png) center / cover;
+        }
+      }
     </style>
   </head>
   <body>
-    <section class="hero image is-square">
-        
+    <!-- .hero -->
+    <section class="hero is-fullheight">
+      <!-- .hero-head -->
+      <div class="hero-head">
+        <div class="columns is-mobile is-marginless">
+          <div class="column left">
+            <p class="navbar-item">MOVADO</p>
+          </div>
+          <div class="column center desktop">
+            <p class="navbar-item">CLASSIC</p>
+            <p class="navbar-item">BOLD</p>
+            <p class="navbar-item">ULTRA SLIM</p>
+            <p class="navbar-item">CONNECT</p>
+          </div>
+          <div class="column right">
+            <p class="navbar-item desktop">SHOP</p>
+            <p class="navbar-item desktop">SIGN IN</p>
+            <p class="navbar-item">HAMBURGER</p>
+          </div>
+        </div>
+      </div>
+      <!-- /.hero-head -->
     </section>
-    </section>
+    <!-- /.hero -->
   </body>
 </html>
